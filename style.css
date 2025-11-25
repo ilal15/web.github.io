@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f0f2f5; /* Background yang lebih cerah */
+}
+.container {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+}
+h1 {
+    color: #007bff; /* Warna biru */
+    text-align: center;
+}
+h3 {
+    color: #333;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 8px;
+    margin-top: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #ddd;
+    margin: 20px 0;
+}
+
+/* Status Box */
+#status-box {
+    padding: 12px;
+    margin-top: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    transition: all 0.3s;
+}
+.status-disconnected { background-color: #fdd; color: #c00; border: 1px solid #f99; }
+.status-connecting { background-color: #ffc; color: #a50; border: 1px solid #ff9; }
+.status-connected { background-color: #dfd; color: #0a0; border: 1px solid #9f9; }
+
+/* Data Sensor Grid */
+.data-container {
+    margin-top: 20px;
+}
+.data-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.data-card {
+    flex: 1;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+.data-card h4 {
+    margin-top: 0;
+    color: #555;
+    font-size: 1em;
+}
+.data-card p {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #007bff;
+    margin: 5px 0 0 0;
+}

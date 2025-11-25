@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESP32 MQTT Monitoring</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.1/mqttws31.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Monitoring Sensor ESP32 🌐</h1>
+        <p>Broker: **WSS** | Topik Subscribe: **sensor/data**</p>
+        
+        <div id="status-box" class="status-disconnected">Status: Disconnected</div>
+
+        <hr>
+
+        <div class="data-container">
+            <h3>Data Sensor Terbaru (JSON)</h3>
+            <div class="data-grid">
+                <div class="data-card">
+                    <h4>🌡️ Suhu (Temperature)</h4>
+                    <p id="data-temperature">N/A</p>
+                </div>
+                <div class="data-card">
+                    <h4>💧 Kelembapan (Humidity)</h4>
+                    <p id="data-humidity">N/A</p>
+                </div>
+                <div class="data-card">
+                    <h4>🧪 pH Tanah (pH)</h4>
+                    <p id="data-ph">N/A</p>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <h3>Log Pesan Diterima:</h3>
+        <pre id="message-log" style="background: #eee; padding: 10px; height: 100px; overflow-y: scroll;"></pre>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
